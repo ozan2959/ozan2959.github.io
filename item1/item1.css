@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Amatica+SC');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+li {
+    list-style: none;
+    display: inline-block
+}
+
+a {
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    line-height: 26px;
+}
+
+.btn {
+
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+
+    background-color: #ededed !important;
+    color: #3c3c3c !important;
+    border: 1px solid #fff !important;
+}
+
+/* Vintage clothing sale */
+h3 {
+	color: #A66340 !important;
+	text-shadow: 0px 0px 300px #000 !important;
+	font-size: 36px !important;
+	margin: auto !important;
+	display: block !important;
+	font-weight: 700 !important;
+
+}
+/* NAV */
+
+.navbar {
+	background-color: #2f3036 !important;
+	text-transform: uppercase;
+	font-family: 'Amatica SC', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.navbar a {
+
+	color: #fff !important;
+	opacity: .7;
+}
+
+.navbar a:hover {
+	opacity: 1;
+	background-color: #A66340 !important;
+}
+
+/* ITEM */
+
+/* MODAL */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: 0.5s;
+    float:left;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+#myImg2 {
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: 0.5s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+#myImg3 {
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: 0.5s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 25px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff !important;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* END MODAL */
+
+/* Main carousel style */
+
+.carousel {
+    width: 512px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+    color: #2f3036;
+}
+
+@media screen and (max-width: 640px) {
+    .carousel {
+        width: 256px;
+    }
+}
+
+/* END CAROUSEL */
+
+/* CONTENT */
+
+.product-description {
+    margin-top: 15px;
+    line-height: 16px;
+    font-family: 'Poiret One', Arial !important;
+    font-weight: 600;
+    font-size: 125%;
+    padding-bottom: 10px;
+}
+
+h6 {
+    font-family: 'Poiret One', Arial !important;
+    font-size: 175% !important;
+}
+
+img {
+  max-width: 512px; 
+}
+
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em; 
+  }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+} 
+}
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; 
+}
+
+.colors {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; 
+}
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: bold; 
+  font-family: 'Amatica SC', Arial;
+  font-size: 250%;
+}
+
+.checked, .price span {
+  color: #ff9f1a; 
+}
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; 
+}
+
+.product-title {
+  margin-top: 0; 
+}
+
+.size {
+    margin-right: 10px; 
+}
+
+.size:first-of-type {
+    margin-left: 40px; 
+}
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 2px; 
+}
+.color:first-of-type {
+    margin-left: 20px; 
+}
+
+.add-to-cart .like {
+  background: #ff9f1a !important;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background .3s ease;
+  transition: background .3s ease; 
+}
+
+.add-to-cart:hover, .like:hover {
+    background: #b36800;
+    color: #fff; }
+
+.red {
+  background: #7A001E; 
+}
+
+.tooltip-inner {
+    padding: 1.3em; 
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); 
+}
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); 
+} 
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); 
+}
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); 
+} 
+}
+
+/*# s
+
+/* END ITEMS */
+
+/* footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+  background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+  background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+  background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+  background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+  color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  font-size:20px;
+}
+.social-circle li i {
+  margin:0;
+  line-height:50px;
+  text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #2f3036;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+a {
+ background-color: #D3D3D3;   
+}
+
+/* SOCIAL ICONS END */
+
+/* END PAGE TEXT */
+
+.endpage {
+  font-size: 250%;
+  font-family: 'Amatica SC', Arial;
+  color: #2f3036;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.endpage2 {
+  font-size: 100%;
+  font-family: 'Poiret One', Arial;
+  color: #2f3036;
+  font-weight: 700;
+}
+
+.endpage3 {
+  font-size: 100%;
+  font-family: 'Poiret One', Arial;
+  color: #2f3036;
+  font-weight: 700;
+}
